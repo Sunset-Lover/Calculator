@@ -1,0 +1,35 @@
+<div class="wrapper">
+  
+  <h2>{{ subDisplayText }}</h2>
+  <div class="input">{{ mainDisplayText }}</div>
+  <div class="clear-del">
+      <div class="clear signe" (click)="allClear()">CLEAR</div>
+      <div class="del signe" (click)="delete()">DEL</div>
+  </div>
+  <div class="paveNumerique">
+      <div class="ligne">
+          <span (click)="pressKey('7')">7</span>
+          <span (click)="pressKey('8')">8</span>
+          <span (click)="pressKey('9')">9</span>
+          <span class="signe" (click)="pressKey('/')">/</span>
+      </div>
+      <div class="ligne">
+        <span (click)="pressKey('4')">4</span>
+        <span (click)="pressKey('5')">5</span>
+        <span (click)="pressKey('6')">6</span>
+        <span class="signe"  (click)="pressKey('×')">×</span>
+    </div>
+    <div class="ligne">
+        <span  (click)="pressKey('1')">1</span>
+        <span (click)="pressKey('2')">2</span>
+        <span (click)="pressKey('3')">3</span>
+        <span class="signe" (click)="pressKey('-')">-</span>
+    </div>
+    <div class="ligne">
+        <span (click)="pressKey('.')">.</span>
+        <span (click)="pressKey('0')">0</span>
+        <span class="signe" (click)="getAnswer()">=</span>
+        <span class="signe" (click)="pressKey('+')">+</span>
+    </div>
+  </div>
+</div>
